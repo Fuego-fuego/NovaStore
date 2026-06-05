@@ -1,33 +1,16 @@
-# NovaStore
+# React + Vite
 
-NovaStore is a modern e-commerce platform designed to simulate a real-world online shopping experience.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-The application allows customers to browse products, manage shopping carts, save wishlists, and manage their accounts. Administrators can access a dedicated dashboard to monitor customers, products, and orders.
+Currently, two official plugins are available:
 
-## Features
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-- Authentication
-- Product Catalog
-- Search & Filtering
-- Shopping Cart
-- Wishlist
-- Checkout Process
-- User Profiles
-- Admin Dashboard
-- Dark Mode
-- Responsive Design
-- Firebase Integration
-- CI/CD Deployment
+## React Compiler
 
-## Tech Stack
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-- React
-- Vite
-- Tailwind CSS
-- React Router
-- Firebase Authentication
-- Firestore
-- TanStack Query
-- React Hot Toast
-- GitHub Actions
-- Vercel
+## Expanding the ESLint configuration
+
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
