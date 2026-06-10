@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+/* =========================== 
+    1.ROOT 
+===========================*/
 @theme {
   --font-primary: "Inter", sans-serif;
   --font-heading: var(--font-primary);
@@ -88,21 +91,40 @@
 }
 
 @layer base {
-  body {
-    font-family: var(--font-body);    
-  }
+/* =========================== 
+  GLOBAL STYLES 
+===========================*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  line-height: 1.2;
+}
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: var(--font-heading);
-  }
+body {
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  color: var(--body-fg);
+  background-color: var(--body-bg);
+  line-height: 1.5;
+}
 
 
-  /* UTILITY CLASSES */
+select,
+input,
+textarea {
+  background: var(--input-bg);
+}
+
+
+
+/* =========================== 
+    UTILITY CLASSES 
+===========================*/
+
 .container-custom{
 --max-width: 50rem;
     max-width: min(var(--max-width), 100% - 1rem);
@@ -120,4 +142,14 @@
     font-size: var(--fs-secondary-heading);
 }
 
+.visually-hidden {
+  border: 0;
+  clip-path: inset(50%);
+  height: 1px;
+  margin: 0;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
 }
