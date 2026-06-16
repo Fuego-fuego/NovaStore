@@ -5,8 +5,11 @@
 ===========================*/
 @theme {
   --font-primary: "Inter", sans-serif;
+  --font-accent:"Monoton", sans-serif;
+
   --font-heading: var(--font-primary);
   --font-body: var(--font-primary);
+  --font-logo: var(--font-accent);
 
 
   --clr-accent-blue-400: #2567f5;
@@ -55,16 +58,16 @@
   --fs-800: clamp(2rem, 1.5rem + 2.5vw, 3rem);
   --fs-900: clamp(2.5rem, 2rem + 3vw, 3.5rem);
   
-  --fs-primary-heading: var(--fs-800);
-  --fs-secondary-heading: var(--fs-700);
-  --fs-modal-header: var(--fs-650);
-  --fs-body: var(--fs-500);
-  --fs-nav: var(--fs-300);
-  --fs-footer: var(--fs-200);
-  --fs-btn: var(--fs-300);
-  --fs-logo-small-text: var(--fs-50);
-  --fs-primary-footer-copyright-text: var(--fs-100);
-  --fs-table: var(--fs-200);
+  --text-primary-heading: var(--fs-800);
+  --text-secondary-heading: var(--fs-700);
+  --text-modal-header: var(--fs-650);
+  --text-body: var(--fs-500);
+  --text-nav: var(--fs-400);
+  --text-footer: var(--fs-200);
+  --text-btn: var(--fs-300);
+  --text-logo-small-text: var(--fs-50);
+  --text-primary-footer-copyright-text: var(--fs-100);
+  --text-table: var(--fs-200);
   
 }
 
@@ -190,7 +193,7 @@ textarea {
 
 .container-custom{
 --max-width: 50rem;
-    max-width: min(var(--max-width), 100% - 1rem);
+    max-width: min(var(--max-width), 100% - 2rem);
     margin-inline: auto;
 }
 
@@ -214,5 +217,15 @@ textarea {
   position: absolute;
   white-space: nowrap;
   width: 1px;
+}
+
+/* =========================== 
+    4. COMPONENTS 
+===========================*/
+/* mobile navigation*/
+.mobile-main-nav{
+    z-index:999;
+    inset:6rem 1rem;
+    background-color: var(--header-bg);    
 }
 }
