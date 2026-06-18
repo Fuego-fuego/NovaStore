@@ -68,6 +68,9 @@
   --text-logo-small-text: var(--fs-50);
   --text-primary-footer-copyright-text: var(--fs-100);
   --text-table: var(--fs-200);
+
+  --border-radius-400:4px;
+  --border-radius-800:8px;
   
 }
 
@@ -222,10 +225,37 @@ textarea {
 /* =========================== 
     4. COMPONENTS 
 ===========================*/
-/* mobile navigation*/
+/* Mobile navigation*/
 .mobile-main-nav{
     z-index:999;
     inset:6rem 1rem;
     background-color: var(--header-bg);    
+}
+/* Buttons */
+.btn{    
+    padding: 0.5rem 1.3rem;
+    width:fit-content;   
+    border:none;
+
+}
+.btn[data-type="primary"]{
+    background: #000;
+    color:#eeeeee;
+}
+.btn[data-type="inverted"]{
+    background:#eee;
+    color:#000;
+}
+.btn[data-type="ghost"]{    
+    color:var(--body-fg);
+    border: 1px solid currentColor;
+}
+.btn[data-type="login"]{
+    background: #04D9FF;
+    color:#fff;
+}
+.btn[data-type="sign-up"]{
+    background: #FF7600;
+    color:#fff;
 }
 }
