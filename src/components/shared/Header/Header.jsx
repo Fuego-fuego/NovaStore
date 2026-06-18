@@ -97,7 +97,7 @@ const Header = () => {
                     <nav aria-expanded={navIsExpanded} aria-label="Main Navigation" id="mobileMainNav" 
                     className={`mobile-main-nav | 
                                 text-[var(--text-nav)]  text-nav
-                                rounded-lg
+                                rounded-(--border-radius-800)
                                 shadow-2xs dark:shadow-none
                                 ${navIsExpanded?"fixed":"hidden"}
                                 `}>
