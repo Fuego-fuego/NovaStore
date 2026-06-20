@@ -23,7 +23,8 @@ const Header = () => {
 
     return (
         <header className="bg-[var(--header-bg)] 
-                            pbe-[1rem]
+                            pbs-[0.9rem]
+                            pbe-[1.8rem]
                             shadow-2xs dark:shadow-none">
             <div className="container-custom">
                 {/* Desktop */}
